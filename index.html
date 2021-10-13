@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/imc.css">
+    <title>IMC</title>
+</head>
+<body>
+<header>
+    <h1>Cálculo IMC</h1>
+</header>
+<div class="container">
+    <h2>Monitore o seu peso</h2>
+    <p>Procure subir na balança ao menos uma vez por mês e sempre no mesmo horário. 
+        Assim, você terá parâmetros para dizer que está ganhando ou perdendo peso com 
+        frequência.</p>
+
+<h2>Tabela IMC <!--- Classificação para adultos acima de 20 anos.--></h2>
+
+<div class="tabela">
+    <ul>
+        <li>Menor que 18.5 - <strong>Abaixo do peso</strong>;</li>
+        <li>Entre 18.5 e 24.9 - <strong>Peso normal</strong>;</li>
+        <li>Entre 25.0 e 29.9 - <strong>Pré-obesidade</strong>;</li>
+        <li>Entre 30.0 e 34.9 - <strong>Obesidade Grau 1</strong>;</li>
+        <li>Entre 35.0 e 39.9 - <strong>Obesidade Grau 2</strong>;</li>
+        <li>Acima de 40 - <strong>Obesidade Grau 3</strong>;</li>
+    </ul>
+</div>
+<p><small>fonte: <a href="https://www.euro.who.int/en/health-topics/disease-prevention/nutrition/a-healthy-lifestyle/body-mass-index-bmi"target="_blank">https://www.euro.who.int/en/health-topics/disease-prevention/nutrition/a-healthy-lifestyle/body-mass-index-bmi</a></small></p>
+    <div class="dadosColetados">
+        <input type="number" id="peso" placeholder="Peso ex.: 67,00" required />
+        <input type="number" id="altura" placeholder="Altura ex.:1,64" required />
+        <input type="submit" id="botao" value="Calcular IMC">
+    </div>
+
+    <div class="dados">
+        <h2>Dados Informados:</h2>
+        <div class="peso">
+            <p>Peso:</p>
+            <p id="peso1"></p>
+        </div>
+        <div class="altura">
+            <p>Altura:</p>
+            <p id="altura1"></p>
+        </div>
+        <div class="imc">
+            <p>Seu IMC é:</p>
+            <p id="imc"></p>
+        </div>
+        <p id="resultado"></p>
+        <p id="exemplo"></p>
+    </div>
+
+<div class="sugestoes">
+    <h1>O IMC é apenas um passo para acompanhar a saúde do seu corpo.</h1> 
+    <h2>Veja abaixo como controlar o peso e evitar o risco de doenças relacionadas 
+        à obesidade e a má alimentação.</h2>
+
+        <nav>
+            <ul>
+                <li>
+                    <a href="#">Pratique uma atividade física, no mínimo 30 minutos por dia;</a>
+                </li>
+                <li>
+                    <a href="./agua.html">Mantenha-se hidratado beba em média 2 litros de água por dia;</a>
+                </li>
+                <li>
+                    <a href="#">Beba Chá;</a>
+                </li>
+                <li>
+                    <a href="#">Aposte em alimentos que queimam gordura;</a>
+                </li>
+                <li>
+                    <a href="#">Consuma alimentos que aceleram o metabolismo;</a>
+                </li>
+                <li>
+                    <a href="#">Diminua o consumo de sal e açucar;</a>
+                </li>
+            </ul>
+        </nav>
+
+</div>
+</div><!--container-->
+    <script src="./js/imc.js"></script>
+</body>
+
+<footer>
+
+</footer>
+</html>
