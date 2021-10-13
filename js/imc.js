@@ -21,6 +21,7 @@ button.addEventListener('click', clicou);
 function clicou(){
 
     escondeDivDados.style.visibility = "visible";
+    sugestao.style.display = "flex";
 
     peso = inputElement1.value;
     altura = inputElement2.value;

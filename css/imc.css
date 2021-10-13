@@ -13,35 +13,23 @@ body{
     flex-wrap: wrap;
     justify-content: center;
 }
-.container{
-    max-width: 750px;
-}
 header{
     width: 100%;
     background-color: rgba(255, 0, 0, 0.5)
 }
+h1, h2{
+    font-size: 24px;
+    text-align: center;
+    padding: 20px;
+}
+.container{
+    max-width: 750px;
+}
+
 .dadosColetados{
     display: flex;
     justify-content: center;
 }
-h1, h2{
-    font-size: 22px;
-    font-weight: 900;
-    text-align: center;
-
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-h2{
-    font-size: 18px;
-}
-p{
-    text-align: justify;
-    font-size: 17px;
-    margin-left: 10px;
-    margin-bottom: 2px;
-}
-
 .tabela{
     display: flex;
     justify-content: center;
@@ -74,9 +62,6 @@ small{
 
     margin-bottom: 20px;
 }
-textarea:focus, input:focus, select:focus {
-    outline: 0;
-}
 input[type=number]::-webkit-inner-spin-button { 
     -webkit-appearance: none;  
 }
@@ -105,6 +90,15 @@ input{
     border-radius: 20px 0px 20px 0px;
     padding: 18px;
 }
+.sugestoes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.sugestoes h2{
+    text-align: justify;
+    font-size: 20px;
+}
 .sugestoes nav ul> li{
     padding: 10px;
 }
@@ -115,5 +109,4 @@ input{
 .sugestoes nav ul li> a:hover{
     text-decoration: none;
     color:darkgreen;
-    font-weight: 900;
 }
